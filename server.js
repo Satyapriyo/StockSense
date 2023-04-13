@@ -1,4 +1,5 @@
-const express = require("express");
+import express from "express";
+// const express = require("express");
 const app = express();
 // const path = require("path");
 //routes
@@ -14,4 +15,4 @@ app.listen(3000, () => {
   console.log("running on port http://localhost:3000");
 });
 
-module.exports = app;
+// module.exports = app;
