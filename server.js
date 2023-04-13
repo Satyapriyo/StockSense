@@ -13,3 +13,5 @@ app.use("/LoginRegisterpage", express.static("LoginRegisterPage"));
 app.listen(3000, () => {
   console.log("running on port http://localhost:3000");
 });
+
+module.exports = app;
