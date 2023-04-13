@@ -2,7 +2,7 @@
 It's a beginner friendly mutual fund index fund guiding platform to reduce risk and get better returns .
 
 # To contribute
-After forking the repository the copy the cloning link from your forked repository </br>
+After forking the repository the copy then cloning link from your forked repository </br>
 <code>git clone <b>that link</b></code>
 
 Then</br> <code>cd folder</code>
