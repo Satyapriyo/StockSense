@@ -1,6 +1,7 @@
 {
   "name": "finnancapp",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "Making project as product to ",
   "main": "server.js",
   "scripts": {
