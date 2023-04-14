@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const port = process.env.port || 3000
+const port = process.env.port || 3000;
 
 //routes
-app.use("/", express.static("home"));
+app.use(express.static("Home"));
 app.use("/contact", express.static("LoginRegisterPage"));
 app.use("/news", express.static("news"));
 app.use("/about", express.static("about"));
