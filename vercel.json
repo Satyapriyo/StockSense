@@ -25,6 +25,22 @@
   ],
   "routes": [
     {
+      "src": "/contact",
+      "dest": "contact/index.html"
+    },
+    {
+      "src": "/news",
+      "dest": "news/index.html"
+    },
+    {
+      "src": "/",
+      "dest": "home/index.html"
+    },
+    {
+      "src": "/about",
+      "dest": "about/index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/server.js"
     }

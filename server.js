@@ -4,7 +4,6 @@ const port = process.env.port || 3000;
 
 //routes
 app.use("/", express.static("Home"));
-app.use("/contact", express.static("LoginRegisterPage"));
 app.use("/news", express.static("news"));
 app.use("/about", express.static("about"));
 app.use("/contact", express.static("contact"));
