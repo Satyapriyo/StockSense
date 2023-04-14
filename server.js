@@ -1,12 +1,17 @@
-const express = require("express");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 const app = express();
 const port = process.env.port || 3000;
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 //routes
-app.use("/", express.static("Home"));
-app.use("/news", express.static("news"));
-app.use("/about", express.static("about"));
-app.use("/contact", express.static("contact"));
+app.use("/", express.static(path.join(__dirname, "/home")));
+app.use("/news", express.static(path.join(__dirname, "/news")));
+app.use("/about", express.static(path.join(__dirname, "/about")));
+app.use("/contact", express.static(path.join(__dirname, "/contact")));
 app.use("/LoginRegisterpage", express.static("LoginRegisterPage"));
 
 //port listening
@@ -14,4 +19,4 @@ app.listen(port, () => {
   console.log("running on port http://localhost:3000");
 });
 
-module.exports = app;
+
