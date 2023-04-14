@@ -9,6 +9,197 @@
       charset="utf-8"
     ></script> -->
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        background: #000;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+      }
+      .navbar {
+        display: flex;
+        background: #1d1d1d;
+        justify-content: space-between;
+        width: 100vw;
+        font-size: 2vw;
+        padding: 1rem;
+        position: relative;
+      }
+      a {
+        text-decoration: none;
+        background: #00000000;
+      }
+      p {
+        background: #00000000;
+      }
+      .nav-cover {
+        background: #1d1d1d;
+        position: sticky;
+      }
+      .container {
+        width: 50vw;
+        background: linear-gradient(45deg, white, #1ee5ff);
+        margin-left: 25vw;
+        border-radius: 1rem;
+        margin-right: 25vw;
+        font-size: 2rem;
+        height: 50vh;
+        margin-top: 10vh;
+      }
+      .container:hover {
+        box-shadow: 0.3rem 0.4rem 1rem white;
+        animation-duration: 3000;
+      }
+      .cover {
+        margin-top: 10vh;
+      }
+      .cover p {
+        width: 80vw;
+        margin-left: 10vw;
+        text-align: center;
+      }
+      input {
+        font-size: 2rem;
+        width: 30vw;
+        margin-left: 10vw;
+        border-radius: 0.6rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        outline: none;
+        border: 1px solid white;
+      }
+      .cover p {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 4.7rem;
+      }
+      button {
+        font-size: 1.6rem;
+        width: 10vw;
+        background: #ffffff00;
+        color: #000;
+        margin-left: 20vw;
+        margin-top: 1rem;
+        border-radius: 0.6rem;
+        padding: 1rem;
+        outline: none;
+        border: 1px solid rgb(18, 18, 18);
+        margin-top: 5vh;
+      }
+      .analysis {
+        text-align: center;
+        margin-top: 10vh;
+      }
+      .grad-red-text {
+        background-color: red;
+        background-image: linear-gradient(45deg, #f3ec78, #1ee5ff);
+        background-size: 100%;
+        background-repeat: repeat;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+      }
+
+      .cover p {
+        font-size: 6rem;
+      }
+      @media screen and (max-width: 600px) {
+        .cover p {
+          font-size: 2.8rem;
+        }
+        input {
+          font-size: 1.4rem;
+          margin-left: 6vw;
+          width: 50vw;
+        }
+        .container {
+          width: 70vw;
+          margin-left: 15vw;
+          position: relative;
+        }
+        button {
+          font-size: 0.7rem;
+          width: 20vw;
+          margin-left: 25vw;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+      }
+      @media screen and (max-width: 992px) {
+        .cover p {
+          font-size: 4rem;
+        }
+        input {
+          font-size: 1.5rem;
+          width: 40vw;
+          margin-left: 14vw;
+        }
+        .container {
+          width: 70vw;
+          margin-left: 15vw;
+          position: relative;
+        }
+        button {
+          font-size: 0.8rem;
+          width: 18vw;
+          margin-left: 26vw;
+        }
+      }
+      @media screen and (min-width: 993px) {
+        .cover p {
+          font-size: 4.8rem;
+        }
+        input {
+          font-size: 2rem;
+          width: 30vw;
+          margin-left: 10vw;
+        }
+        .container {
+          width: 50vw;
+          margin-left: 25vw;
+          position: relative;
+        }
+        button {
+          font-size: 1rem;
+          width: 20vw;
+          margin-left: 15vw;
+        }
+      }
+      #ans {
+        font-size: 2rem;
+      }
+      .ans-cover {
+        display: flex;
+        padding: 1vw;
+        width: 50vw;
+        background: #da1f1f;
+        margin-left: 24vw;
+        justify-content: space-around;
+      }
+      .ans-cover b {
+        background: #00000000;
+      }
+      .ans-text {
+        font-size: 2rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .navbar:last-child {
+        right: 5vw;
+      }
+      .navbar div {
+        background: #00000000;
+      }
+      .nav-left {
+        width: 50vw;
+        margin-left: 5vw;
+        background: #00000000;
+      }
+    </style>
     <title>Web App</title>
   </head>
   <body>
