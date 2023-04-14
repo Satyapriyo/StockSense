@@ -34,7 +34,7 @@
     },
     {
       "src": "/",
-      "dest": "home/index.html"
+      "dest": "Home/index.html"
     },
     {
       "src": "/about",
