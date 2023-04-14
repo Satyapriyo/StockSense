@@ -1,7 +1,7 @@
-import express from "express";
-// const express = require("express");
+const express = require("express");
 const app = express();
-// const path = require("path");
+const port = process.env.port || 3000
+
 //routes
 app.use("/", express.static("home"));
 app.use("/contact", express.static("LoginRegisterPage"));
@@ -11,8 +11,8 @@ app.use("/contact", express.static("contact"));
 app.use("/LoginRegisterpage", express.static("LoginRegisterPage"));
 
 //port listening
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("running on port http://localhost:3000");
 });
 
-// module.exports = app;
+module.exports = app;

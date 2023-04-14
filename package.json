@@ -1,11 +1,11 @@
 {
   "name": "finnancapp",
   "version": "1.0.0",
-  "type": "module",
   "description": "Making project as product to ",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon server.js"
   },
   "author": "satyapriyo",
   "license": "ISC",
