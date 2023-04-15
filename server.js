@@ -12,11 +12,12 @@ app.use("/", express.static(path.join(__dirname, "/home")));
 app.use("/news", express.static(path.join(__dirname, "/news")));
 app.use("/about", express.static(path.join(__dirname, "/about")));
 app.use("/contact", express.static(path.join(__dirname, "/contact")));
-app.use("/LoginRegisterpage", express.static("LoginRegisterPage"));
+app.use(
+  "/LoginRegisterPage",
+  express.static(path.join(__dirname, "/LoginRegisterPage"))
+);
 
 //port listening
 app.listen(port, () => {
   console.log("running on port http://localhost:3000");
 });
-
-
