@@ -21,6 +21,10 @@
     {
       "src": "about/**",
       "use": "@vercel/static"
+    },
+    {
+      "src": "LoginRegiterPage/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -38,6 +42,10 @@
     },
     {
       "src": "/about",
+      "dest": "about/index.html"
+    },
+    {
+      "src": "/LoginRegisterPage",
       "dest": "about/index.html"
     },
     {
