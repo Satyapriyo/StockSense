@@ -11,7 +11,7 @@ Then</br> <code>cd folder</code>
 <code>npm install</code>
 
 # Run Locally</br>
-<code>nodemon server.js</code>
+<code>node server.js</code>
 
 
 
