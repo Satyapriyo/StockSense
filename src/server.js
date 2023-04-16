@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const hbs = require("hbs");
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 7652;
 //database connecting
 require("./db/connect");
 const Register = require("./models/registers");
@@ -23,13 +23,6 @@ hbs.registerPartials(partial_path);
 app.get("/", (req, res) => {
   res.render("index");
 });
-// app.get("/home", (req, res) => {
-//   const username = req.query.username;
-//   res.render("home", { username: username });
-// });
-// app.get("/home", (req, res) => {
-//   res.render("home");
-// });
 app.get("/login", (req, res) => {
   res.render("login");
 });
@@ -55,6 +48,23 @@ app.post("/register", async (req, res) => {
       res.status(201).render("index");
     } else {
       res.json({ message: "data not found" });
+    }
+  } catch (err) {
+    res.status(400).send(err);
+  }
+});
+//login cheek
+app.post("/login", async (req, res) => {
+  try {
+    const email = req.body.email;
+    const password = req.body.password;
+    const userEmail = await Register.findOne({ email: email });
+    // console.log(`${email} and ${password}`);
+    // res.send(userEmail.password);
+    if(userEmail.password === password){
+      res.status(201).render("index");
+    }else{
+      res.send("password or email is not matching");
     }
   } catch (err) {
     res.status(400).send(err);
