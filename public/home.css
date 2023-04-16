@@ -9,7 +9,7 @@
   background: #1d1d1d;
   justify-content: space-between;
   width: 100vw;
-  font-size: 2vw;
+  font-size: 1rem;
   padding: 1rem;
   position: relative;
 }
@@ -177,10 +177,10 @@ button {
 .navbar:last-child {
   right: 5vw;
 }
-.navbar div{
+.navbar div {
   background: #00000000;
 }
-.nav-left{
+.nav-left {
   width: 50vw;
   margin-left: 5vw;
   background: #00000000;

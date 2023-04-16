@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://cdn.plot.ly/plotly-2.20.0.min.js"
+      charset="utf-8"
+    ></script> -->
+    <link rel="stylesheet" href="home.css" />
+    <title>Web App</title>
+  </head>
+  <body>
+    <section class="nav-cover">
+      <nav class="navbar">
+        <section class="nav-left">
+          <a href="/">Home</a>
+          <a href="/news">News</a>
+          <a href="/contact">Contact Us</a>
+          <a href="/about">About</a>
+        </section>
+        <div><a href="/register">sign Up</a></div>
+        <div><a href="/login">sign In</a></div>
+      </nav>
+    </section>
+    <div class="cover">
+      <p>
+        Invest to get
+        <b class="grad-red-text">maximum</b>
+        returns with
+        <b class="grad-red-text">lowest</b>
+        risk
+      </p>
+      <div class="container">
+        <input
+          type="number"
+          placeholder="enter amout"
+          id="amount"
+          onchange="amountANdTimeUpdate()"
+        />
+        <input
+          type="number"
+          placeholder="enter time in years"
+          id="time"
+          onchange="amountANdTimeUpdate()"
+        />
+        <button onclick="calculate()">search</button>
+      </div>
+    </div>
+
+    <section class="analysis">
+      <div class="ans-cover">
+        <b class="ans-text">NIFTY 50</b>
+        <b class="ans-text"> 12-15%</b>
+        <b id="ans">0</b>
+      </div>
+    </section>
+    <span id="test"></span>
+    <script src="home.js"></script>
+    <!-- script part is starting from here -->
+  </body>
+</html>
