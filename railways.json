@@ -5,7 +5,7 @@
   },
   "deploy": {
     "restartPolicyType": "ON_FAILURE",
-    "startCommand": "node src/app.js",
+    "startCommand": "node src/server.js",
     "restartPolicyMaxRetries": 10
   }
 }
