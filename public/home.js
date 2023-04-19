@@ -3,6 +3,7 @@ let totalTime = parseInt(document.querySelector("#time").value);
 let finalAns = document.querySelector("#ans");
 let test = document.querySelector("#test");
 let ans_cover = document.querySelector(".analysis");
+let hide = document.querySelector(".hide");
 let ReturnInSip = 0;
 let Return = 0;
 let cheek = false;
@@ -14,6 +15,7 @@ var amountANdTimeUpdate = () => {
   test.innerHTML = testItem;
 };
 const calculate = () => {
+  hide.style.display = "block";
   ReturnInSip = (amount * Math.pow(1.15, totalTime)).toFixed(2);
   finalAns.innerHTML = ReturnInSip + "$";
   renderList();
@@ -27,7 +29,7 @@ let fundList = [
   {
     id: 1,
     name: "ICICI Predential Equity & Debt Fund",
-    risk:"high",
+    risk: "high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 1.121,
@@ -43,7 +45,7 @@ let fundList = [
   {
     id: 2,
     name: "Kotak Tax Saver Fund Direct-Growth ",
-    risk:"high",
+    risk: "high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -59,7 +61,7 @@ let fundList = [
   {
     id: 3,
     name: "Mirae Asset Tax Saver Fund Direct-Growth",
-    risk:"high",
+    risk: "high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -75,7 +77,7 @@ let fundList = [
   {
     id: 4,
     name: "Canara Robeco Equity Tax Saver Direct- Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -91,7 +93,7 @@ let fundList = [
   {
     id: 5,
     name: "DSP Tax Saver Direct Plan-Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -107,7 +109,7 @@ let fundList = [
   {
     id: 6,
     name: "Edelweiss Aggressive Hybrid Fund Direct - Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -123,7 +125,7 @@ let fundList = [
   {
     id: 7,
     name: "Baroda BNP Paribas Aggressive Hybrid Fund Direct - Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -139,7 +141,7 @@ let fundList = [
   {
     id: 8,
     name: "Motilal Oswal Long Term Equity Fund Direct-Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -155,7 +157,7 @@ let fundList = [
   {
     id: 9,
     name: "Mirae Asset Hybrid Equity Fund Direct-Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,
@@ -171,7 +173,7 @@ let fundList = [
   {
     id: 10,
     name: "Canara Robeco Equity Hybrid Fund Direct-Growth",
-    risk:"very high",
+    risk: "very high",
     interestLow: 1.12,
     interestHigh: 1.15,
     categoryAvg: 12.1,

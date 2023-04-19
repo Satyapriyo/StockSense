@@ -13,23 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    {% comment %} font-family: 'Karla', sans-serif; {% endcomment %}
+    <!--{% comment %} font-family: 'Karla', sans-serif; {% endcomment %} -->
     <link rel="stylesheet" href="home.css" />
     <title>Web App</title>
   </head>
   <body>
-    <section class="nav-cover">
-      <nav class="navbar">
-        <section class="nav-left">
-          <a href="/">Home</a>
-          <a href="/news">News</a>
-          <a href="/contact">Contact Us</a>
-          <a href="/about">About</a>
-        </section>
-        <div><a href="/register">sign Up</a></div>
-        <div><a href="/login">sign In</a></div>
-      </nav>
-    </section>
+    {{>headers}}
     <div class="cover">
       <p>
         Invest to get
@@ -45,6 +34,7 @@
           id="amount"
           onchange="amountANdTimeUpdate()"
         />
+        
         <input
           type="number"
           placeholder="enter time in years"
@@ -56,10 +46,12 @@
     </div>
 
     <section class="analysis">
-      <div class="ans-cover">
-        <b class="ans-text">NIFTY 50</b>
-        <b class="ans-text"> 12-15%</b>
-        <b id="ans">0</b>
+      <div class="hide">
+        <div class="ans-cover">
+          <b class="ans-text">NIFTY 50</b>
+          <b class="ans-text"> 12-15%</b>
+          <b id="ans">0</b>
+        </div>
       </div>
     </section>
     <span id="test"></span>

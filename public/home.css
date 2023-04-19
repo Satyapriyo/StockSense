@@ -163,10 +163,12 @@ button {
   display: flex;
   padding: 1vw;
   width: 50vw;
-  background: #da1f1f;
+  background: #34d0fc;
   margin-left: 24vw;
   justify-content: space-around;
+  box-shadow: 1px 1px 3px white;
 }
+
 .ans-cover b {
   background: #00000000;
 }
@@ -184,4 +186,18 @@ button {
   width: 50vw;
   margin-left: 5vw;
   background: #00000000;
+}
+.hide{
+  display: none;
+}
+.inputField{
+  background: #b5b5b500;
+}
+.inputField lable{
+
+}
+.radio{
+  width: 10vw;
+  position: relative;
+  right: 0px;
 }
