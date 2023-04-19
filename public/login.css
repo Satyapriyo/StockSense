@@ -1,202 +1,218 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
   }
-  body {
-    display: flex;
+  body{
+    display:flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url("https://media.istockphoto.com/id/1345912457/photo/financial-stock-market-graph-selective-focus.jpg?b=1&s=170667a&w=0&k=20&c=bkFbjmknST5rqnYF4atbFYVAP5EcSpIEl4eYXdSKedg=")
-      no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-family: Kalam, sans-serif;
+    align-items:center;
+    min-height:100vh;
+    background: url("images/undraw_savings_re_eq4w.svg") no-repeat;
+    background-position: left;
+
+    background-size: 38%;;
+    
   }
   
   header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:transparent ;
   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:99;
   }
-  .logo {
+  .logo{
     font-size: 2em;
-    color: #fff;
+    background-image: linear-gradient(45deg, #f3ec78, #1ee5ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  
+  
     user-select: none;
+  
   }
-  .navigation a {
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
+  .navigation a{
+    position:relative;
+    font-size:1.1em;
+    color:black;
+    text-decoration:none;
+    font-weight:500;
     margin-left: 40px;
   }
-  .navigation a::after {
-    content: "";
+  .navigation a::after{
+    content:'';
     position: absolute;
-    left: 0;
+    left:0;
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: black;
     border-radius: 5px;
-    transform: scaleX(0);
-    transform: scaleX(0);
-    transition: transform 0.5s;
+    transform:scaleX(0);
+    transform:scaleX(0);
+    transition: transform .5s;
+    
   }
-  .navigation a:hover::after {
+  .navigation a:hover::after{
     transform-origin: left;
     transform: scalex(1);
+    
   }
-  .navigation .btnLogin-popup {
-    width: 130px;
-    height: 50px;
+  .toggle-button{
+    position: absolute;
+    top:.75rem;
+    right:1rem;
+    display: none;
+    flex-direction:column;
+    justify-content: space-between;
+    width:30px;
+
+  }
+ 
+  .wrapper{
+    position:relative;
+    width:400px;
+    height:440px;
     background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font: size 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: 0.5s;
-  }
-  .navigation .btnLogin-popup:hover {
-    background: #fff;
-    color: black;
-  }
-  .wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
+    
+  
   }
-  .wrapper.active-popup {
-    transform: scale(1);
+  .wrapper.active-popup{
+    transform:scale(1);
   }
-  .wrapper.active {
-    height: 520px;
+  .wrapper.active{
+    height:520px;
   }
-  .wrapper.form-box {
-    width: 100%;
-    padding: 40px;
+  .wrapper.form-box{
+    width:100%;
+    padding:40px;
   }
-  .wrapper .form-box.login {
-    transition: transform 0.18s ease;
+  .wrapper .form-box.login{
+    transition: transform .18s ease;
     transform: translateX(0);
   }
-  .wrapper.active .form-box.login {
-    transition: none;
+  .wrapper.active .form-box.login{
+    transition:none;
     transform: translateX(-400px);
   }
-  .wrapper .form-box.register {
-    position: absolute;
+  .wrapper .form-box.register{
+    position:absolute;
     transition: none;
     transform: translateX(400px);
   }
-  .wrapper.active .form-box.register {
-    transition: transform 0.18s ease;
+  .wrapper.active .form-box.register{
+    transition: transform .18s ease;
     transform: translateX(0);
   }
-  .form-box h2 {
-    font-size: 2em;
-    color: white;
-    text-align: center;
+  .form-box h2{
+    font-size:2em;
+    color:black;
+    text-align:center;
+  
   }
-  .input-box {
+  .input-box{
     position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
+    width:100%;
+    height:50px;
+    border-bottom:2px solid #162938;
     margin: 30px 0;
+  
   }
-  .input-box label {
+  .input-box label{
     position: absolute;
-    top: 50%;
-    left: 5px;
+    top:50%;
+    left:5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: white;
+    color:black;
     font-weight: 500;
-    pointer-events: none;
-    transition: 0.5s;
+    pointer-events:none;
+    transition: .5s;
+  
   }
   .input-box input:focus ~ label,
   .input-box input:valid ~ label {
     top: -5px;
   }
-  .input-box input {
+  .input-box input{
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
-    outline: none;
+    outline:none;
     font-size: 1em;
-    color: white;
+    color: black;
     font-weight: 600;
-    padding: 0 35px 0 5 px;
+    padding:0 35px 0 5 px;
   }
-  .remember-forgot {
-    font-size: 0.9em;
-    color: white;
+  .remember-forgot{
+    font-size: .9em;
+    color:black;
     font-weight: 500;
     margin: -15px 0 15px;
-    display: flex;
+    display:flex;
     justify-content: space-between;
+    
   }
-  .remember-forgot label input {
-    accent-color: white;
+  .remember-forgot label input{
+    accent-color: black ;
     margin-right: 3px;
+  
   }
-  .remember-forgot a {
-    color: white;
+  .remember-forgot a{
+    color: black;
     text-decoration: none;
   }
-  .remember-forgot a:hover {
+  .remember-forgot a:hover{
     text-decoration: underline;
   }
-  .btn {
-    width: 100%;
-    height: 45px;
+  .btn{
+    width:100%;
+    height:45px;
     background: #162938;
     border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
+    outline:none;
+    border-radius:6px;
+    cursor:pointer;
     font-size: 1em;
     color: white;
-    font-weight: 500;
+    font-weight:500;
+  
   }
-  .login-register {
-    font-size: 0.9em;
-    color: wheat;
-    text-align: center;
+  .login-register{
+    font-size:.9em ;
+    color: black;
+    text-align:center;
     font-weight: 500;
     margin: 25px 0 10px;
   }
-  .login-register p a {
-    color: wheat;
+  .login-register p a{
+    color:black;
     text-decoration: none;
-    font-weight: 600;
+    font-weight:600
   }
-  .login-register p a:hover {
+  .login-register p a:hover{
     text-decoration: underline;
-  }
   
+  
+  }
