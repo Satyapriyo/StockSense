@@ -157,7 +157,7 @@ button {
   }
 }
 #ans {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .ans-cover {
   display: flex;
@@ -173,7 +173,7 @@ button {
   background: #00000000;
 }
 .ans-text {
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .navbar:last-child {

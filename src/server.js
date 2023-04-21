@@ -35,6 +35,9 @@ app.get("/register", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 app.post("/register", async (req, res) => {
   try {
     if (req.body != null) {
@@ -61,9 +64,9 @@ app.post("/login", async (req, res) => {
     const userEmail = await Register.findOne({ email: email });
     // console.log(`${email} and ${password}`);
     // res.send(userEmail.password);
-    if(userEmail.password === password){
+    if (userEmail.password === password) {
       res.status(201).render("index");
-    }else{
+    } else {
       res.send("password or email is not matching");
     }
   } catch (err) {

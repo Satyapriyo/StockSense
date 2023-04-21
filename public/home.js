@@ -198,7 +198,7 @@ const renderList = () => {
         e.interestHigh * 100 -
         100
       ).toFixed(2)}%</b> 
-      <b id="ans">${parseFloat(calculateInterest(e.interestHigh))}</b> 
+      <b id="ans">${parseFloat(calculateInterest(e.interestHigh))}</b>
       </div>
       </section> `;
     })
