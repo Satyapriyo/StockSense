@@ -183,9 +183,11 @@ button {
   background: #00000000;
 }
 .nav-left {
-  width: 50vw;
+  width: 40vw;
   margin-left: 5vw;
   background: #00000000;
+  display: flex;
+  justify-content: space-around;
 }
 .hide{
   display: none;
@@ -193,11 +195,14 @@ button {
 .inputField{
   background: #b5b5b500;
 }
-.inputField lable{
 
-}
 .radio{
   width: 10vw;
   position: relative;
   right: 0px;
+}
+.nav-right{
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
 }
