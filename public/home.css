@@ -162,9 +162,9 @@ button {
 .ans-cover {
   display: flex;
   padding: 1vw;
-  width: 50vw;
+  width: 70vw;
   background: #34d0fc;
-  margin-left: 24vw;
+  margin-left: 14vw;
   justify-content: space-around;
   box-shadow: 1px 1px 3px white;
 }

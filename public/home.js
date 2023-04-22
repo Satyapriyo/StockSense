@@ -1,3 +1,4 @@
+// import fundData from "./data";
 let amount = parseInt(document.querySelector("#amount").value);
 let totalTime = parseInt(document.querySelector("#time").value);
 let finalAns = document.querySelector("#ans");
@@ -8,6 +9,7 @@ let ReturnInSip = 0;
 let Return = 0;
 let cheek = false;
 let testItem = "";
+// alert(fundData);
 var amountANdTimeUpdate = () => {
   cheek = true;
   amount = parseInt(document.querySelector("#amount").value);
