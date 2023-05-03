@@ -8,6 +8,7 @@
       src="https://cdn.plot.ly/plotly-2.20.0.min.js"
       charset="utf-8"
     ></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,7 +63,13 @@
     </div>
     {{>footer}}
     <script  src="home.js"></script>
-    <script type="module" src="./data.js"></script>
+    {% comment %} <script type="module" src="./data.js"></script> {% endcomment %}
     <!-- script part is starting from here -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: true,
+      });
+    </script>
   </body>
 </html>

@@ -66,7 +66,7 @@ let lowRiskFunds = [
     risk: "very high",
     interestLow: 12,
     interestHigh: 13.71,
-    categoryAvg: 13.90,
+    categoryAvg: 13.9,
     oneMonthAvg: 2.9,
     threeMonthAvg: 3.02,
     sixMonthAvg: 3.05,
@@ -81,7 +81,7 @@ let lowRiskFunds = [
     risk: "very high",
     interestLow: 12,
     interestHigh: 13.71,
-    categoryAvg: 13.90,
+    categoryAvg: 13.9,
     oneMonthAvg: 2.9,
     threeMonthAvg: 3.02,
     sixMonthAvg: 3.05,
@@ -89,9 +89,8 @@ let lowRiskFunds = [
     threeYearAvg: 24.87,
     fiveYearAvg: 13.08,
     start: 4,
-  }
-  
-]
+  },
+];
 let fundList = [
   {
     id: 1,
@@ -143,7 +142,7 @@ let fundList = [
     risk: "very high",
     interestLow: 12,
     interestHigh: 16.4,
-    categoryAvg: 15.50,
+    categoryAvg: 15.5,
     oneMonthAvg: 1.0252,
     threeMonthAvg: 1.0009,
     sixMonthAvg: 1.0481,
@@ -157,7 +156,7 @@ let fundList = [
     risk: "very high",
     interestLow: 12,
     interestHigh: 15.75,
-    categoryAvg: 15.50,
+    categoryAvg: 15.5,
     oneMonthAvg: 1.0252,
     threeMonthAvg: 1.0009,
     sixMonthAvg: 1.0481,
@@ -198,7 +197,7 @@ const renderList = () => {
   const testItem = fundList
     .map((e) => {
       return ` <section class="analysis" key=${e.id}> 
-        <div class="ans-cover"> 
+        <div class="ans-cover " data-aos="fade-up"> 
         <b class="ans-text">${e.name}</b> 
         <b class="ans-text">
       ${e.interestHigh}% since inception</b>
