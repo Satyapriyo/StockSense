@@ -29,6 +29,69 @@ const calculateInterest = (i) => {
   Return = (amount * Math.pow(parseFloat(interest), totalTime)).toFixed(2);
   return Return;
 };
+let lowRiskFunds = [
+  {
+    id: 1,
+    name: "Quant Multi Asset Fund Direct-Growth",
+    risk: "moderate",
+    interestLow: 12,
+    interestHigh: 13.91,
+    categoryAvg: 11.95,
+    oneMonthAvg: 4.8,
+    threeMonthAvg: 2.45,
+    sixMonthAvg: 3.1,
+    oneYearAvg: 8.92,
+    threeYearAvg: 38.44,
+    fiveYearAvg: 21.65,
+    start: 5,
+  },
+  {
+    id: 2,
+    name: "Quant Multi Asset Fund Direct-Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 16.58,
+    categoryAvg: 11.95,
+    oneMonthAvg: 1.76,
+    threeMonthAvg: 2.6,
+    sixMonthAvg: 4.92,
+    oneYearAvg: 12.75,
+    threeYearAvg: 29.04,
+    fiveYearAvg: 14.45,
+    start: 4,
+  },
+  {
+    id: 3,
+    name: "Edelweiss Aggressive Hybrid Fund Direct - Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 13.71,
+    categoryAvg: 13.90,
+    oneMonthAvg: 2.9,
+    threeMonthAvg: 3.02,
+    sixMonthAvg: 3.05,
+    oneYearAvg: 10.71,
+    threeYearAvg: 24.87,
+    fiveYearAvg: 13.08,
+    start: 4,
+  },
+  {
+    id: 4,
+    name: "Edelweiss Aggressive Hybrid Fund Direct - Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 13.71,
+    categoryAvg: 13.90,
+    oneMonthAvg: 2.9,
+    threeMonthAvg: 3.02,
+    sixMonthAvg: 3.05,
+    oneYearAvg: 10.71,
+    threeYearAvg: 24.87,
+    fiveYearAvg: 13.08,
+    start: 4,
+  }
+  
+]
 let fundList = [
   {
     id: 1,
