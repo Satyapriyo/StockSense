@@ -115,7 +115,7 @@ button {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .nav-left {
     font-size: 0.4rem !important;
   }
