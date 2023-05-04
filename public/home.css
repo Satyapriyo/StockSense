@@ -4,6 +4,10 @@
   margin: 0px;
   padding: 0px;
 }
+.title {
+  display: none;
+  margin-bottom: 10vh;
+}
 .navbar {
   display: flex;
   background: #1d1d1d;
@@ -27,16 +31,17 @@ p {
 }
 .container {
   width: 50vw;
-  background: linear-gradient(45deg, white, #1ee5ff);
+  /* background: linear-gradient(45deg, white, #1ee5ff); */
+  background: #aebaff;
   margin-left: 24vw;
   border-radius: 1rem;
-
+  color: aliceblue;
   font-size: 2rem;
   height: 50vh;
   margin-top: 10vh;
 }
 .container:hover {
-  box-shadow: 0.3rem 0.4rem 1rem white;
+  box-shadow: 0.3rem 0.4rem 1rem rgb(113, 113, 113);
   animation-duration: 3000;
 }
 .cover {
@@ -150,10 +155,10 @@ button {
   .ans-cover {
     font-size: 0.5rem !important;
   }
-  .ans-text{
+  .ans-text {
     font-size: 0.5rem !important;
   }
-  #ans{
+  #ans {
     font-size: 0.5rem !important;
   }
 }
@@ -205,10 +210,11 @@ button {
   display: flex;
   padding: 1vw;
   width: 70vw;
-  background: #34d0fc;
+  background: #2a2f4b;
   margin-left: 14vw;
   justify-content: space-around;
-  box-shadow: 1px 1px 3px white;
+  box-shadow: 1px 0px 3px rgb(53, 53, 53);
+  border-radius: 0.7rem;
 }
 
 .ans-cover b {
@@ -226,7 +232,7 @@ button {
   background: #00000000;
 }
 .nav-left {
-  width: 40vw;
+  width: 50vw;
   margin-left: 5vw;
   background: #00000000;
   display: flex;
@@ -246,7 +252,7 @@ button {
   right: 0px;
 }
 .nav-right {
-  width: 40vw;
+  width: 30vw;
   display: flex;
   justify-content: space-around;
 }
@@ -257,3 +263,7 @@ button {
   width: 90vw;
   background: #ff1212;
 } */
+
+.head_main {
+  font-family: "Bruno Ace SC", cursive;
+}
