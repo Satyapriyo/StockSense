@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
@@ -46,8 +49,15 @@
         <button onclick="calculate()">search</button>
       </div>
     </div>
-
     <section class="analysis">
+      <h1 class="lowRisk">Low Risk</h1>
+      </div>
+    </section>
+    <div class="list-cover">
+      <span id="lowRiskSection"></span>
+    </div>
+    <section class="analysis">
+      <h1 class="title">Beginners Recomended</h1>
       <div class="hide">
         <div class="ans-cover">
           <b class="ans-text">Mutual Fund</b>
@@ -61,15 +71,20 @@
     <div class="list-cover">
       <span id="test"></span>
     </div>
+    
+
+    
+    
+     
     {{>footer}}
-    <script  src="home.js"></script>
     
     <!-- script part is starting from here -->
+    <script src="home.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         mirror: true,
       });
-    </script>
+      </script>
   </body>
 </html>

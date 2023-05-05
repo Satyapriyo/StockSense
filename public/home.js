@@ -5,6 +5,9 @@ let finalAns = document.querySelector("#ans");
 let test = document.querySelector("#test");
 let ans_cover = document.querySelector(".analysis");
 let hide = document.querySelector(".hide");
+let title = document.querySelector(".title");
+let lowRiskSection = document.querySelector("#lowRiskSection");
+let lowRisk = document.querySelector(".lowRisk ");
 let ReturnInSip = 0;
 let Return = 0;
 let cheek = false;
@@ -18,10 +21,12 @@ var amountANdTimeUpdate = () => {
 };
 const calculate = () => {
   hide.style.display = "block";
+  lowRisk.style.display = "block";
   // ReturnInSip = (amount * Math.pow(1.15, totalTime)).toFixed(2);
   // finalAns.innerHTML = ReturnInSip + "$";
   renderList();
   ans_cover.style.display = "block";
+  title.style.display = "block";
 };
 const calculateInterest = (i) => {
   let interest = i;
@@ -33,7 +38,7 @@ let lowRiskFunds = [
   {
     id: 1,
     name: "Quant Multi Asset Fund Direct-Growth",
-    risk: "moderate",
+    risk: "moderate high",
     interestLow: 12,
     interestHigh: 13.91,
     categoryAvg: 11.95,
@@ -47,48 +52,48 @@ let lowRiskFunds = [
   },
   {
     id: 2,
-    name: "Quant Multi Asset Fund Direct-Growth",
-    risk: "very high",
+    name: "ICICI Prudential Short Term Fund Direct Plan-Growth",
+    risk: "moderate",
     interestLow: 12,
-    interestHigh: 16.58,
-    categoryAvg: 11.95,
-    oneMonthAvg: 1.76,
-    threeMonthAvg: 2.6,
-    sixMonthAvg: 4.92,
-    oneYearAvg: 12.75,
-    threeYearAvg: 29.04,
-    fiveYearAvg: 14.45,
-    start: 4,
+    interestHigh: 8.59,
+    categoryAvg: 7.72,
+    oneMonthAvg: 1.01,
+    threeMonthAvg: 2.34,
+    sixMonthAvg: 4.26,
+    oneYearAvg: 8.18,
+    threeYearAvg: 7.21,
+    fiveYearAvg: 8,
+    start: 5,
   },
   {
     id: 3,
-    name: "Edelweiss Aggressive Hybrid Fund Direct - Growth",
-    risk: "very high",
+    name: "Aditya Birla Sun Life Short Term Direct Fund -Growth",
+    risk: "moderate high",
     interestLow: 12,
-    interestHigh: 13.71,
-    categoryAvg: 13.9,
-    oneMonthAvg: 2.9,
-    threeMonthAvg: 3.02,
-    sixMonthAvg: 3.05,
-    oneYearAvg: 10.71,
-    threeYearAvg: 24.87,
-    fiveYearAvg: 13.08,
-    start: 4,
+    interestHigh: 8.73,
+    categoryAvg: 7.72,
+    oneMonthAvg: 1,
+    threeMonthAvg: 2.25,
+    sixMonthAvg: 4.15,
+    oneYearAvg: 7.21,
+    threeYearAvg: 7.63,
+    fiveYearAvg: 7.81,
+    start: 5,
   },
   {
     id: 4,
-    name: "Edelweiss Aggressive Hybrid Fund Direct - Growth",
-    risk: "very high",
+    name: "Quant Multi Asset Fund Direct-Growth",
+    risk: "moderate high",
     interestLow: 12,
-    interestHigh: 13.71,
-    categoryAvg: 13.9,
-    oneMonthAvg: 2.9,
-    threeMonthAvg: 3.02,
-    sixMonthAvg: 3.05,
-    oneYearAvg: 10.71,
-    threeYearAvg: 24.87,
-    fiveYearAvg: 13.08,
-    start: 4,
+    interestHigh: 13.91,
+    categoryAvg: 11.95,
+    oneMonthAvg: 4.8,
+    threeMonthAvg: 2.45,
+    sixMonthAvg: 3.1,
+    oneYearAvg: 8.92,
+    threeYearAvg: 38.44,
+    fiveYearAvg: 21.65,
+    start: 5,
   },
 ];
 let fundList = [
@@ -208,5 +213,21 @@ const renderList = () => {
       </section> `;
     })
     .join("");
+  const lowRiskItem = lowRiskFunds
+    .map((e) => {
+      return ` <section class="analysis" key=${e.id}> 
+        <div class="ans-cover " data-aos="fade-up"> 
+        <b class="ans-text">${e.name}</b> 
+        <b class="ans-text">
+      ${e.interestHigh}% since inception</b>
+      <b id="ans">${parseFloat(calculateInterest(e.interestHigh))}</b>
+      <b class="ans-text">${e.risk}</b>
+      <b class="ans-text">${e.categoryAvg}%</b>
+      </div>
+      </section> `;
+    })
+    .join("");
+
   test.innerHTML = testItem;
+  lowRiskSection.innerHTML = lowRiskItem;
 };
