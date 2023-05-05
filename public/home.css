@@ -4,6 +4,9 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  overflow-x: hidden;
+}
 .title {
   display: none;
   margin-bottom: 10vh;
@@ -31,8 +34,10 @@ p {
 }
 .nav-cover {
   background: #110f1b;
+  color: aliceblue !important;
   position: sticky;
   top: 0px;
+  z-index: 999;
 }
 .container {
   width: 50vw;
@@ -234,9 +239,9 @@ button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 10vw;
 }
-.navbar:last-child {
+/* .navbar:last-child {
   right: 5vw;
-}
+} */
 .navbar div {
   background: #00000000;
 }
@@ -290,4 +295,10 @@ button {
 }
 .navIcon {
   padding: 1rem 2rem;
+}
+.panel{
+  height: 80vh;
+  width: 90vw;
+ margin-left: 4vw;
+ margin-top: 2vh;
 }
