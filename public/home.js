@@ -6,6 +6,8 @@ let test = document.querySelector("#test");
 let ans_cover = document.querySelector(".analysis");
 let hide = document.querySelector(".hide");
 let title = document.querySelector(".title");
+let lowRiskSection = document.querySelector("#lowRiskSection");
+let lowRisk = document.querySelector(".lowRisk ");
 let ReturnInSip = 0;
 let Return = 0;
 let cheek = false;
@@ -19,6 +21,7 @@ var amountANdTimeUpdate = () => {
 };
 const calculate = () => {
   hide.style.display = "block";
+  lowRisk.style.display = "block";
   // ReturnInSip = (amount * Math.pow(1.15, totalTime)).toFixed(2);
   // finalAns.innerHTML = ReturnInSip + "$";
   renderList();
@@ -210,5 +213,21 @@ const renderList = () => {
       </section> `;
     })
     .join("");
+  const lowRiskItem = lowRiskFunds
+    .map((e) => {
+      return ` <section class="analysis" key=${e.id}> 
+        <div class="ans-cover " data-aos="fade-up"> 
+        <b class="ans-text">${e.name}</b> 
+        <b class="ans-text">
+      ${e.interestHigh}% since inception</b>
+      <b id="ans">${parseFloat(calculateInterest(e.interestHigh))}</b>
+      <b class="ans-text">${e.risk}</b>
+      <b class="ans-text">${e.categoryAvg}%</b>
+      </div>
+      </section> `;
+    })
+    .join("");
+
   test.innerHTML = testItem;
+  lowRiskSection.innerHTML = lowRiskItem;
 };

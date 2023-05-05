@@ -8,6 +8,10 @@
   display: none;
   margin-bottom: 10vh;
 }
+.lowRisk {
+  display: none;
+  margin-bottom: 10vh;
+}
 .navbar {
   display: flex;
   background: #1d1d1d;
@@ -16,6 +20,7 @@
   font-size: 1rem;
   padding: 1rem;
   position: relative;
+  z-index: 100;
 }
 a {
   text-decoration: none;
@@ -33,12 +38,14 @@ p {
   width: 50vw;
   /* background: linear-gradient(45deg, white, #1ee5ff); */
   background: #aebaff;
+
   margin-left: 24vw;
   border-radius: 1rem;
   color: aliceblue;
   font-size: 2rem;
   height: 50vh;
   margin-top: 10vh;
+  z-index: 0;
 }
 .container:hover {
   box-shadow: 0.3rem 0.4rem 1rem rgb(113, 113, 113);
@@ -154,6 +161,8 @@ button {
   }
   .ans-cover {
     font-size: 0.5rem !important;
+    width: 90vw !important;
+    margin-left: 4vw !important;
   }
   .ans-text {
     font-size: 0.5rem !important;
@@ -236,6 +245,7 @@ button {
   margin-left: 5vw;
   background: #00000000;
   display: flex;
+  font-family: "Poppins", sans-serif;
   justify-content: space-around;
   font-size: 1rem;
 }
@@ -255,6 +265,7 @@ button {
   width: 30vw;
   display: flex;
   justify-content: space-around;
+  font-family: "Poppins", sans-serif;
 }
 .ans-text {
   width: 10vw;
@@ -266,4 +277,17 @@ button {
 
 .head_main {
   font-family: "Bruno Ace SC", cursive;
+}
+
+.signUp {
+  background: #aebaff !important;
+  color: rgb(36, 36, 36) !important;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.navIcon {
+  padding: 1rem 2rem;
 }
