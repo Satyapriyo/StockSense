@@ -21,7 +21,7 @@ app.set("views", templetes_path);
 hbs.registerPartials(partial_path);
 //routes
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("landingpage");
 });
 app.get("/login", (req, res) => {
   res.render("login");
@@ -31,6 +31,9 @@ app.get("/trade", (req, res) => {
 });
 app.get("/news", (req, res) => {
   res.render("news");
+});
+app.get("/index", (req, res) => {
+  res.render("index");
 });
 app.get("/register", (req, res) => {
   res.render("register");
@@ -66,7 +69,7 @@ app.post("/login", async (req, res) => {
     const password = req.body.password;
     const userEmail = await Register.findOne({ email: email });
     // console.log(`${email} and ${password}`);
-    // res.send(userEmail.password);
+    // // res.send(userEmail.password);
     if (userEmail.password === password) {
       res.status(201).render("index");
     } else {

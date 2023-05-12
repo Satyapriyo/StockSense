@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Josefin+Sans:ital,wght@1,700&family=Poppins:wght@300&display=swap");
+
 * {
   background: #000;
   color: aliceblue;
   margin: 0px;
   padding: 0px;
 }
-body{
+body {
   overflow-x: hidden;
 }
 .title {
@@ -76,7 +78,7 @@ input {
   border: 1px solid white;
 }
 .cover p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 4.7rem;
 }
 button {
@@ -296,9 +298,9 @@ button {
 .navIcon {
   padding: 1rem 2rem;
 }
-.panel{
+.panel {
   height: 80vh;
   width: 90vw;
- margin-left: 4vw;
- margin-top: 2vh;
+  margin-left: 4vw;
+  margin-top: 2vh;
 }

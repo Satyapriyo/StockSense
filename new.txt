@@ -103,3 +103,39 @@
     </section>
   </body>
 </html>
+
+
+          {{! <div class="login-register">
+            <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+          </div> }}
+        </form>
+      </div>
+      {{! <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="text" required>
+            <label >Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="Email" required>
+            <label >Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="Password" required>
+            <label >Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label ><input type="checkbox">I agree to the terms & conditions</label>
+            
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div> }}
+    </div>
