@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">StockSense</h2>
+      <nav class="navigation">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <a href="About.html">About</a>
+        <a href="contact.hbs">Contact us</a>
+
+      </nav>
+    </header>
+    <div class="wrapper">
+
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="Email" required name="email" />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"></span>
+            <input type="Password" required  name="password"/>
+            <label>Password</label>
+
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember-me</label>
+            <a href="">ForgotPassword?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+
+    <script src="login.js"></script>
+  </body>
+</html>

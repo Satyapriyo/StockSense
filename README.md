@@ -8,7 +8,7 @@ After forking the repository the copy then cloning link from your forked reposit
 Then</br> <code>cd folder</code>
 
 # install  dependencies</br>
-<code>node install</code>
+<code>npm install</code>
 
 # Run Locally</br>
 <code>nodemon server.js</code>
