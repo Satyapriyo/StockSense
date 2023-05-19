@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Home</title>
+  </head>
+  <body class="bg-dark text-white">
+    {{>headers}}
+    <div class="row container">
+      <div class="col fs-1 p-4 m-5 bg-light text-dark rounded cursor">
+        Equity Funds For long term (4 years or more)
+      </div>
+      <div class="col fs-1 p-4 m-5">
+        <a href="/typeTwo" class="link"
+          >Hybrid Funds For medium to long term</a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>By Market Capitalization</h1>
+          <div class="row p-4">
+            <h2><a href="/largeCap" class="link">Large Cap</a></h2>
+            <p>Invests in Top 100 stocks</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/midCap" class="link">Mid Cap</a></h2>
+            <p>Invests in Next 150 stocks</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/smallCap" class="link">Small Cap</a></h2>
+            <p>Invests outside Top 250 stocks</p>
+          </div>
+          <div class="row p-4">
+            <h2>
+              <a href="/largeAndMidCap" class="link">Large & MidCap</a>
+            </h2>
+            <p>Invests in Top 250 stocks</p>
+          </div>
+          <div class="row p-4">
+            <h2>
+              <a href="/equityLargeCapIndex" class="link"
+                >Large Cap Index</a
+              >
+            </h2>
+            <p>Passively invest in top 100 companies</p>
+          </div>
+          <div class="row p-4">
+            <h2>
+              <a href="/equityMidCapIndex" class="link">Mid Cap Index</a>
+            </h2>
+            <p>Invest to replicate mid-cap indices</p>
+          </div>
+          <div class="row p-4">
+            <h2>
+              <a href="/equitySmallCapIndex" class="link"
+                >Small Cap Index</a
+              >
+            </h2>
+            <p>Invest to replicate small-cap indices</p>
+          </div>
+        </div>
+        <div class="col">
+          <h1>By Diversification</h1>
+          <div class="row p-4">
+            <h2><a href="/multiCap" class="link">Multi Cap</a></h2>
+            <p>Invests in stocks across market cap</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/flexiCap" class="link">Flexi Cap</a></h2>
+            <p>Invests across large, mid and small-cap stocks</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/focused" class="link">Focused</a></h2>
+            <p>Invests in top stocks in specific industry/segment</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/value" class="link">Value Oriented</a></h2>
+            <p>Invests in under-valued stocks with upside potential</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/international" class="link">International</a></h2>
+            <p>Invests in stocks across market cap</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/contra" class="link">Contra</a></h2>
+            <p>Invests against the prevailing market trends</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/equityDomesticFoF" class="link">Equity FoF</a></h2>
+            <p>Funds that invests in other equity schemes</p>
+          </div>
+        </div>
+        <div class="col">
+          <h1>By Solutions</h1>
+          <div class="row p-4">
+            <h2><a href="/elss" class="link">ELSS</a></h2>
+            <p>Invest to save taxes under 80C and earn additional returns</p>
+          </div>
+          <div class="row p-4">
+            <h2><a href="/retirementSolution" class="link">Retirement Solutions</a></h2>
+            <p>Aggressive saving strategy for retirement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>
