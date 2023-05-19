@@ -11,19 +11,42 @@
       .link { text-decoration: none; color: aliceblue; }
     </style>
   </head>
-  <section class="container bg-dark text-white">
-    <nav class="row p-3">
-      <a href="/" class="col link">StockSence</a>
-      <a href="/index" class="col link">Home</a>
-      <a href="/newsall" class="col link">News</a>
-      <a href="/trade" class="col link">Trade</a>
-      <a href="/about" class="col link">About</a>
-      <div class="nav-right">
-        <!--
-        <div class="signUp"><a href="/register">SIGNUP</a></div>
-        <div class="navIcon"><a href="/login">LOGIN</a></div> 
-      -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark fs-2 mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand link fs-2 ms-5 me-4" href="/">StockSence</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul
+          class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+          style="--bs-scroll-height: 100px;"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/newsall">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Trade">Charts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          
+        </form>
       </div>
-    </nav>
-  </section>
+    </div>
+  </nav>
 </html>

@@ -12,8 +12,12 @@
     />
     <style>
       .mar-10{
-        margin-bottom:20vh !important;
+        margin-bottom:15vh !important;
+        margin-top:10vh;
       }
+      .img-div > img{
+        width:400px;
+    }
     </style>
     <title>Home</title>
   </head>
@@ -21,7 +25,7 @@
   <body class="bg-dark text-white">
     <div class="mar-10 mart-10">
       <div class="container m-5 row">
-        <p class="fs-1">Invest in Mutual Funds</p>
+        <p class="fs-1 fw-bold text-primary">Invest in Mutual Funds</p>
         <div class="col">
         <p class="fs-3 mb-5">
           Mutual Funds are a smart way to grow your money. They can help you
@@ -30,14 +34,14 @@
         </p>
         <a href="/typeOne" class="link bg-white text-dark p-4  w-25 rounded-pill">Explore Mutual Funds</a>
         </div>
-        <div class="col">
-            <img src="images/growth_prev_ui.png"/>
+        <div class="col img-div">
+            <img  src="images/growth_prev_ui.png"/>
         </div>
       </div>
     </div>
     <div class="container m-5">
-      <div class="fs-1">What are Mutual Funds?</div>
-      <div class="fs-4">
+      <div class="fs-1 text-primary fw-bold">What are Mutual Funds?</div>
+      <div class="fs-4 p-2 mt-5">
         It is an investment vehicle where multiple investors come together and
         pool their funds. This pooled money is then invested by the fund manager
         across various asset classes including equity, debt, gold, and other
@@ -51,5 +55,10 @@
         >
       </div>
     </div>
+    <div class="container-fluid">
+      <p class="fs-1 ms-5 fw-bold text-primary">Why Mutual funds are best for beginner invester ?</p>
+      
+    <div>
+    {{>footer}}
   </body>
 </html>

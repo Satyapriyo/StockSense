@@ -139,3 +139,41 @@
         </form>
       </div> }}
     </div>
+
+
+
+    //navbar
+
+    <nav class="navbar navbar-dark bg-dark text-white"  >
+      style="background-color: skyblue ;"
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" >Stocksence</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/contact">Contact Us</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav> 
+
+
+
+      <nav class="row p-3">
+      <a href="/" class="col link">StockSence</a>
+      <a href="/index" class="col link">Home</a>
+      <a href="/newsall" class="col link">News</a>
+      <a href="/trade" class="col link">Trade</a>
+      <a href="/about" class="col link">About</a>
+      <div class="nav-right">
+        <!--
+        <div class="signUp"><a href="/register">SIGNUP</a></div>
+        <div class="navIcon"><a href="/login">LOGIN</a></div> 
+      -->
+      </div>
+    </nav>

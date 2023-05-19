@@ -3,15 +3,65 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <section class="nav-cover">
-    <nav class="navbar">
-      <section class="nav-left">
-        <a href="/" class="head_main navIcon">StockSence</a>
-        <a href="/about" class="navIcon">About</a>
-      </section>
-      <div class="nav-right">
-        <div class="signUp"><a href="/register">SIGNUP</a></div>
-        <div class="navIcon"><a href="/login">LOGIN</a></div>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">StockSence</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="row">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+              >Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+            >Search</button>
+          </form>
+        </div>
       </div>
     </nav>
+
   </section>
 </html>
+<!--
+
+  <nav class="navbar">
+    <section class="nav-left">
+      <a href="/" class="head_main navIcon">StockSence</a>
+      <a href="/about" class="navIcon">About</a>
+    </section>
+    <div class="nav-right">
+      <div class="signUp"><a href="/register">SIGNUP</a></div>
+      <div class="navIcon"><a href="/login">LOGIN</a></div>
+    </div>
+  </nav>
+-->

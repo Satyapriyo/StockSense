@@ -102,6 +102,10 @@ app.get("/contra", (req, res) => {
 app.get("/elss", (req, res) => {
   res.render("elss");
 });
+app.get("/valueOriented", (req, res) => {
+  res.render("valueOriented");
+});
+
 app.get("/retirementSolution", (req, res) => {
   res.render("retirementSolution");
 });
