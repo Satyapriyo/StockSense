@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        .cursor {
+            cursor: pointer;
+          }
+          .btn-green {
+            padding: 1rem 3rem;
+            color: white;
+            background: #75ff5a;
+            outline: none;
+            border: 1px solid white;
+            border-radius: 1rem;
+          }
+          .link {
+            text-decoration: none;
+            color: aliceblue;
+          }
+          .check-green {
+            color: #75ff5a;
+          }
+          .grad-red-text {
+            background-color: red;
+            background-image: linear-gradient(45deg, #f3ec78, #1ee5ff);
+            background-size: 100%;
+            background-repeat: repeat;
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+          }
+          
+          .Container {
+            background: #aebaff;
+            width: 50vw;
+            margin-left: 24vw;
+            margin-left: 24vw;
+            border-radius: 1rem;
+            color: aliceblue;
+            font-size: 2rem;
+            height: 50vh;
+            margin-top: 10vh;
+            z-index: 0;
+          }
+          
+          input {
+            font-size: 2rem;
+            width: 30vw;
+            margin-left: 10vw;
+            border-radius: 0.6rem;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            outline: none;
+            border: 1px solid white;
+          }
+          button {
+            font-size: 1.6rem;
+            width: 10vw;
+            background: #ffffff00;
+            color: #000;
+            margin-left: 20vw;
+            margin-top: 1rem;
+            border-radius: 0.6rem;
+            padding: 1rem;
+            outline: none;
+            border: 1px solid rgb(18, 18, 18);
+            margin-top: 5vh;
+          }
+          
+          .analysis {
+            text-align: center;
+            margin-top: 10vh;
+          }
+          
+          .title {
+            display: none;
+            margin-bottom: 10vh;
+          }
+          .ans-cover {
+            display: flex;
+            padding: 1vw;
+            width: 70vw;
+            background: #2a2f4b;
+            margin-left: 14vw;
+            justify-content: space-around;
+            box-shadow: 1px 0px 3px rgb(53, 53, 53);
+            border-radius: 0.7rem;
+          }
+          
+          .ans-cover b {
+            background: #00000000;
+          }
+          .hide {
+            display: none;
+          }
+          .lowRisk {
+            display: none;
+            margin-bottom: 10vh;
+          }
+          .spacing-bottom {
+            height: 30vh;
+          }
+          .w-10 {
+            width: 10vw;
+          }
+          .center {
+            text-align: center;
+          }
+          .f-10 {
+            font-size: 5rem;
+          }
+          
+    </style>
+    <title>
+      Hybrid Retirement Solutions Fund</title>
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container">
+      <h1 class="mt-3">
+        Hybrid Retirement Solutions Fund</h1>
+      <div class="row p-2 w-25">
+        <div class="col fs-4 p-3">Average Return</div>
+        <div class="col fs-4 p-3">No of Funds</div>
+      </div>
+      <div class="row p-2  w-25">
+        <div class="col p-3 fs-4">14.48%</div>
+        <div class="col p-3 fs-4">17</div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h1 class="p-3">What is Retirement Solutions Mutual Fund</h1>
+      <p class="fs-4 p-2">
+        These funds invest in a mix of equity and debt instruments. The asset mix helps lower the volatility than pure equity funds. You cannot redeem for at least 5 years or till retirement, whichever is earlier.
+      </p>
+      <h1 class="p-2 mt-5">Advantages of Retirement Solutions Funds</h1>
+      <p class="fs-4 p-2">
+        <i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>Allocation to stocks gives your money a chance to grow
+      </p>
+      <p class="fs-4 p-2">
+        <i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>The debt component offers better downside protection
+      </p>
+      <p class="fs-4 p-2"><i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>The lock-in period prevents early redemption and allows fund managers to take long-term calls</p>
+    </div>
+    <div class="">
+      <p class="f-10  p-3 center">
+        Calculate 
+        <b class="grad-red-text">expected </b>
+        returns 
+        <!-- <b class="grad-red-text">lowest</b>
+        risk -->
+      </p>
+      <div class="Container">
+        <input
+          type="number"
+          placeholder="enter amout"
+          id="amount"
+          onchange="amountANdTimeUpdate()"
+        />
+        
+        <input
+          type="number"
+          placeholder="enter time in years"
+          id="time"
+          onchange="amountANdTimeUpdate()"
+        />
+        <button onclick="calculate()">search</button>
+      </div>
+    </div>
+
+    <section class="analysis">
+      <h1 class="lowRisk"></h1>
+    </section> 
+     <div class="list-cover">
+      <span id="lowRiskSection"></span>
+    </div>
+    <section class="analysis">
+      <h1 class="title">Best returns in last 5 Years</h1>
+      <div class="hide">
+        <div class="ans-cover">
+          <b class="ans-text w-10">Mutual Fund</b>
+          <b class="ans-text">Annual returns</b>
+          <b class="ans">Expected Returns</b>
+          <b class="ans-text">Risk</b>
+          <b id="ans-text">Catagory Average</b>
+        </div>
+      </div>
+    </section>
+    <div class="list-cover">
+      <span id="test"></span>
+    </div>
+    <div class="container spacing-bottom">
+
+    </div>
+    <!-- script part is starting from here -->
+    <!-- <script src="aggressiveHybrid.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+      </script>
+      <script>
+        // import fundData from "./data";
+let amount = parseInt(document.querySelector("#amount").value);
+let totalTime = parseInt(document.querySelector("#time").value);
+let finalAns = document.querySelector("#ans");
+let test = document.querySelector("#test");
+let ans_cover = document.querySelector(".analysis");
+let hide = document.querySelector(".hide");
+let title = document.querySelector(".title");
+let lowRiskSection = document.querySelector("#lowRiskSection");
+let lowRisk = document.querySelector(".lowRisk ");
+let ReturnInSip = 0;
+let Return = 0;
+let cheek = false;
+let testItem = "";
+// alert(fundData);
+var amountANdTimeUpdate = () => {
+  cheek = true;
+  amount = parseInt(document.querySelector("#amount").value);
+  totalTime = parseInt(document.querySelector("#time").value);
+  test.innerHTML = testItem;
+};
+const calculate = () => {
+  hide.style.display = "block";
+  lowRisk.style.display = "block";
+  // ReturnInSip = (amount * Math.pow(1.15, totalTime)).toFixed(2);
+  // finalAns.innerHTML = ReturnInSip + "$";
+  renderList();
+  ans_cover.style.display = "block";
+  title.style.display = "block";
+};
+const calculateInterest = (i) => {
+  let interest = i;
+  interest = interest / 100 + 1;
+  Return = (amount * Math.pow(parseFloat(interest), totalTime)).toFixed(2);
+  return Return;
+};
+let lowRiskFunds = [
+  {
+    id: 1,
+    name: "Quant Multi Asset Fund Direct-Growth",
+    risk: "moderate high",
+    interestLow: 12,
+    interestHigh: 13.91,
+    categoryAvg: 11.95,
+    oneMonthAvg: 4.8,
+    threeMonthAvg: 2.45,
+    sixMonthAvg: 3.1,
+    oneYearAvg: 8.92,
+    threeYearAvg: 38.44,
+    fiveYearAvg: 21.65,
+    start: 5,
+  },
+  {
+    id: 2,
+    name: "ICICI Prudential Short Term Fund Direct Plan-Growth",
+    risk: "moderate",
+    interestLow: 12,
+    interestHigh: 8.59,
+    categoryAvg: 7.72,
+    oneMonthAvg: 1.01,
+    threeMonthAvg: 2.34,
+    sixMonthAvg: 4.26,
+    oneYearAvg: 8.18,
+    threeYearAvg: 7.21,
+    fiveYearAvg: 8,
+    start: 5,
+  },
+  {
+    id: 3,
+    name: "Aditya Birla Sun Life Short Term Direct Fund -Growth",
+    risk: "moderate high",
+    interestLow: 12,
+    interestHigh: 8.73,
+    categoryAvg: 7.72,
+    oneMonthAvg: 1,
+    threeMonthAvg: 2.25,
+    sixMonthAvg: 4.15,
+    oneYearAvg: 7.21,
+    threeYearAvg: 7.63,
+    fiveYearAvg: 7.81,
+    start: 5,
+  },
+  {
+    id: 4,
+    name: "Quant Multi Asset Fund Direct-Growth",
+    risk: "moderate high",
+    interestLow: 12,
+    interestHigh: 13.91,
+    categoryAvg: 11.95,
+    oneMonthAvg: 4.8,
+    threeMonthAvg: 2.45,
+    sixMonthAvg: 3.1,
+    oneYearAvg: 8.92,
+    threeYearAvg: 38.44,
+    fiveYearAvg: 21.65,
+    start: 5,
+  },
+];
+let fundList = [
+  {
+    id: 1,
+    name: "ICICI Predential Equity & Debt Fund Direct Growth",
+    risk: "high",
+    interestLow: 12,
+    interestHigh: 18.32,
+    categoryAvg: 13.9,
+    oneMonthAvg: 2.52,
+    threeMonthAvg: 0.9,
+    sixMonthAvg: 4.81,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+    start: 5,
+  },
+  {
+    id: 2,
+    name: "Kotak Tax Saver Fund Direct-Growth ",
+    risk: "high",
+    interestLow: 12,
+    interestHigh: 16.85,
+    categoryAvg: 15.5,
+    oneMonthAvg: 1.0252,
+    threeMonthAvg: 1.0009,
+    sixMonthAvg: 1.0481,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+    start: 5,
+  },
+  {
+    id: 3,
+    name: "Mirae Asset Tax Saver Fund Direct-Growth",
+    risk: "high",
+    interestLow: 12,
+    interestHigh: 16.68,
+    categoryAvg: 10.97,
+    oneMonthAvg: 1.0252,
+    threeMonthAvg: 1.0009,
+    sixMonthAvg: 1.0481,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+  },
+  {
+    id: 4,
+    name: "Canara Robeco Equity Tax Saver Direct- Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 16.4,
+    categoryAvg: 15.5,
+    oneMonthAvg: 1.0252,
+    threeMonthAvg: 1.0009,
+    sixMonthAvg: 1.0481,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+  },
+  {
+    id: 5,
+    name: "DSP Tax Saver Direct Plan-Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 15.75,
+    categoryAvg: 15.5,
+    oneMonthAvg: 1.0252,
+    threeMonthAvg: 1.0009,
+    sixMonthAvg: 1.0481,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+  },
+  {
+    id: 6,
+    name: "Edelweiss Aggressive Hybrid Fund Direct - Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 15.36,
+    categoryAvg: 13.83,
+    oneMonthAvg: 1.0252,
+    threeMonthAvg: 1.0009,
+    sixMonthAvg: 1.0481,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+  },
+  {
+    id: 7,
+    name: "Baroda BNP Paribas Aggressive Hybrid Fund Direct - Growth",
+    risk: "very high",
+    interestLow: 12,
+    interestHigh: 13.76,
+    categoryAvg: 10.1,
+    oneMonthAvg: 1.0252,
+    threeMonthAvg: 1.0009,
+    sixMonthAvg: 1.0481,
+    oneYearAvg: 1.0606,
+    threeYearAvg: 1.2842,
+    fiveYearAvg: 1.1446,
+  },
+];
+const renderList = () => {
+  const testItem = fundList
+    .map((e) => {
+      return ` <section class="analysis" key=${e.id}> 
+        <div class="ans-cover " data-aos="fade-up"> 
+        <b class="ans-text w-10">${e.name}</b> 
+        <b class="ans-text">
+      ${e.interestHigh}% since inception</b>
+      <b id="ans">${parseFloat(calculateInterest(e.interestHigh))}</b>
+      <b class="ans-text">${e.risk}</b>
+      <b class="ans-text">${e.categoryAvg}%</b>
+      </div>
+      </section> `;
+    })
+    .join("");
+  const lowRiskItem = lowRiskFunds
+    .map((e) => {
+      return ` <section class="analysis" key=${e.id}> 
+        <div class="ans-cover " data-aos="fade-up"> 
+        <b class="ans-text w-10">${e.name}</b> 
+        <b class="ans-text w-10">
+      ${e.interestHigh}% since inception</b>
+      <b id="ans w-10">${parseFloat(calculateInterest(e.interestHigh))}</b>
+      <b class="ans-text w-10">${e.risk}</b>
+      <b class="ans-text w-10">${e.categoryAvg}%</b>
+      </div>
+      </section>`;
+    })
+    .join("");
+
+  test.innerHTML = testItem;
+  //   lowRiskSection.innerHTML = lowRiskItem;
+};
+
+      </script>
+  </body>
+</html>
+
+  </body>
+</html>
