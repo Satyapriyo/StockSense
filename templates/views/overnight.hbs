@@ -90,7 +90,7 @@
             width: 10vw;
             background: #ffffff00;
             color: #000;
-            margin-left: 20vw !important;
+            margin-left: 20vw !important ;
             margin-top: 1rem !important;
             border-radius: 0.6rem !important;
             padding: 1rem;
@@ -143,44 +143,45 @@
           }
           
     </style>
-    <title>
-        Large & Mid Cap Equity Mutual Funds </title>
+    <title>Overnight Mutual Funds
+    </title>
   </head>
   <body class="bg-dark text-light">
     {{>headers}}
     <div class="container">
-      <h1 class="mt-3">
-        Large & Mid Cap Equity Mutual Funds</h1>
+      <h1 class="mt-3">Overnight Mutual Funds
+      </h1>
       <div class="row p-2 w-25">
         <div class="col fs-4 p-3">Average Return</div>
         <div class="col fs-4 p-3">No of Funds</div>
       </div>
       <div class="row p-2  w-25">
-        <div class="col p-3 fs-4">47.18%</div>
-        <div class="col p-3 fs-4">19</div>
+        <div class="col p-3 fs-4">4.08%</div>
+        <div class="col p-3 fs-4">23</div>
       </div>
     </div>
     <div class="container mt-5">
-      <h1 class="p-3">What is Large & MidCap Mutual Fund</h1>
+      <h1 class="p-3">What is Overnight Mutual Fund
+      </h1>
       <p class="fs-4 p-2">
-        Large and Mid Cap Mutual Funds are equity funds that invest in India's top 200 companies. These funds bring together India's biggest companies, and mid-sized companies that are challenging those big companies for the top slot.
+        Overnight funds are debt funds that lend to corporates for 1 business day. The corporates eligible for borrowing through this route are regulated and are mostly banks, insurance companies, mutual funds, provident funds, and NBFCs
       </p>
-      <h1 class="p-2 mt-5">Advantages of Large & MidCap Funds</h1>
+      <h1 class="p-2 mt-5">Advantages of  Overnight Funds</h1>
       <p class="fs-4 p-2">
-        <i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>deal for an investment horizon of 5+ years
+        <i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>Safest debt funds which can be used for parking money for few days
       </p>
       <p class="fs-4 p-2">
-        <i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>Get the perfect combination'stability of large caps and aggression of mid-sized companies
+        <i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>No risk of default as borrowers needed to give prescribed securities as collateral
       </p>
-      <p class="fs-4 p-2"><i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>A smart way to invest in mid caps as you take lesser risk than pure mid cap funds</p>
+      <p class="fs-4 p-2"><i class="fa-solid fa-check fa-beat-fade check-green p-2"></i>Zero-risk means you have to settle for low returns</p>
     </div>
     <div class="">
       <p class="f-10  p-3 center">
         Calculate 
         <b class="grad-red-text">expected </b>
-        returns 
-        <!-- <b class="grad-red-text">lowest</b>
-        risk -->
+        returns with
+        <b class="grad-red-text">lowest</b>
+        risk
       </p>
       <div class="Container">
         <input
@@ -336,11 +337,11 @@ let lowRiskFunds = [
 let fundList = [
   {
     id: 1,
-    name: "Quant Large And Mid Cap Fund Direct-Growth",
-    risk: "very high",
+    name: "UTI Overnight Fund Direct-Growth",
+    risk: "high",
     interestLow: 12,
-    interestHigh: 17.45,
-    categoryAvg: 16.42,
+    interestHigh: 6.2,
+    categoryAvg: 6.02,
     oneMonthAvg: 2.52,
     threeMonthAvg: 0.9,
     sixMonthAvg: 4.81,
@@ -351,11 +352,11 @@ let fundList = [
   },
   {
     id: 2,
-    name: "ICICI Prudential Large & Mid Cap Fund Direct Plan-Growth ",
-    risk: "very high",
+    name: "SBI Overnight Fund Direct-Growth ",
+    risk: "high",
     interestLow: 12,
-    interestHigh: 14.92,
-    categoryAvg: 16.42,
+    interestHigh: 16.85,
+    categoryAvg: 6.02,
     oneMonthAvg: 1.0252,
     threeMonthAvg: 1.0009,
     sixMonthAvg: 1.0481,
@@ -366,11 +367,11 @@ let fundList = [
   },
   {
     id: 3,
-    name: "HDFC Large And Mid Cap Fund Direct- Growth",
+    name: "HDFC Overnight Fund Direct Plan-Growth",
     risk: "high",
     interestLow: 12,
-    interestHigh: 11.78,
-    categoryAvg: 16.42,
+    interestHigh: 5.94,
+    categoryAvg: 6.02,
     oneMonthAvg: 1.0252,
     threeMonthAvg: 1.0009,
     sixMonthAvg: 1.0481,
@@ -380,11 +381,11 @@ let fundList = [
   },
   {
     id: 4,
-    name: "SBI Large & Midcap Fund Direct Plan-Growth",
+    name: "Aditya Birla Sun Life Overnight Fund Direct - Growth",
     risk: "very high",
     interestLow: 12,
-    interestHigh: 16.42,
-    categoryAvg: 16.42,
+    interestHigh: 4.52,
+    categoryAvg: 6.02,
     oneMonthAvg: 1.0252,
     threeMonthAvg: 1.0009,
     sixMonthAvg: 1.0481,
@@ -394,11 +395,11 @@ let fundList = [
   },
   {
     id: 5,
-    name: "DSP Tax Saver Direct Plan-Growth",
+    name: "Axis Overnight Fund Direct - Growth",
     risk: "very high",
     interestLow: 12,
-    interestHigh: 15.84,
-    categoryAvg: 16.42,
+    interestHigh: 4.37,
+    categoryAvg: 6.02,
     oneMonthAvg: 1.0252,
     threeMonthAvg: 1.0009,
     sixMonthAvg: 1.0481,
@@ -406,7 +407,7 @@ let fundList = [
     threeYearAvg: 1.2842,
     fiveYearAvg: 1.1446,
   },
-
+  
 ];
 const renderList = () => {
   const testItem = fundList
@@ -448,4 +449,3 @@ const renderList = () => {
 
   </body>
 </html>
-

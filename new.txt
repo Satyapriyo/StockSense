@@ -177,3 +177,72 @@
       -->
       </div>
     </nav>
+
+
+
+Park Your Savings
+Overnight
+Overnight
+For up to 1 week
+Liquid
+Liquid
+For 1 week to 1 month
+Ultra Short Duration
+Ultra Short Duration
+For 2 to 4 months
+Low Duration
+Low Duration
+For 3 to 9 months
+Money Market
+Money Market
+For 6 to 12 months
+Index
+Index
+Long-term passive funds for debt investments
+By Solutions
+Retirement Solutions
+Retirement Solutions
+Invests primarily in debt papers for retirement solutions
+
+Better than FDs
+Banking and PSU
+Banking and PSU
+Lends only to Banks & PSUs
+Corporate Bond
+Corporate Bond
+Lends to Safe & Sound Companies
+Short Duration
+Short Duration
+For 1 to 3 years
+Others
+Credit Risk
+Credit Risk
+Invest at least 65% in not-so-highly rated securities
+Gilt
+Gilt
+Invests primarily in government securities
+Gilt with 10 year Constant Duration
+Gilt with 10 year Constant Duration
+Invests passively in government securities.
+Floater
+Floater
+Invests at least 65% in floating rate-bonds
+Debt FoF
+Debt FoF
+Invests in other debt funds
+Debt for Long Term
+Medium Duration
+Medium Duration
+For 2 to 4 years
+Target Maturity
+Target Maturity
+Index funds for debt investments
+Medium to Long Duration
+Medium to Long Duration
+For 3 to 5 years
+Long Duration
+Long Duration
+For 5 years or more
+Dynamic Bond
+Dynamic Bond
+Lends based on interest rate movements

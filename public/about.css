@@ -10,7 +10,7 @@
   min-height: 100vh;
   background-color: #add;
 }
-.container {
+.Container {
   width: 80%;
   display: block;
   margin: auto;

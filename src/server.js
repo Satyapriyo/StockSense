@@ -4,7 +4,7 @@ const path = require("path");
 const hbs = require("hbs");
 const dotenv = require("dotenv");
 const cors = require("cors");
-const { Configuration, OpenAIApi } = require("openai")
+const { Configuration, OpenAIApi } = require("openai");
 dotenv.config();
 const port = process.env.PORT || 7652;
 const configuration = new Configuration({
@@ -75,6 +75,9 @@ app.get("/smallCap", (req, res) => {
 app.get("/equityLargeCapIndex", (req, res) => {
   res.render("equityLargeCapIndex");
 });
+app.get("/largeAndMidCap", (req, res) => {
+  res.render("largeAndMidCap");
+});
 app.get("/equityMidCapIndex", (req, res) => {
   res.render("equityMidCapIndex");
 });
@@ -105,13 +108,21 @@ app.get("/elss", (req, res) => {
 app.get("/valueOriented", (req, res) => {
   res.render("valueOriented");
 });
-
+// overnight
+app.get("/overnight", (req, res) => {
+  res.render("overnight");
+});
 app.get("/retirementSolution", (req, res) => {
   res.render("retirementSolution");
 });
-
+app.get("/typeThree", (req, res) => {
+  res.render("typeThree");
+});
 app.get("/aggressiveHybrid", (req, res) => {
   res.render("aggressiveHybrid");
+});
+app.get("/HybridChildrenSolution", (req, res) => {
+  res.render("HybridChildrenSolution");
 });
 app.get("/equitySavings", (req, res) => {
   res.render("equitySavings");
@@ -131,9 +142,6 @@ app.get("/retirementSolution", (req, res) => {
   res.render("retirementSolution");
 });
 
-app.get("/children", (req, res) => {
-  res.render("children");
-});
 app.get("/arbitrage", (req, res) => {
   res.render("arbitrage");
 });
@@ -144,11 +152,69 @@ app.get("/hybridDomesticFoF", (req, res) => {
 app.get("/equityDomesticFoF", (req, res) => {
   res.render("equityDomesticFoF");
 });
+
+app.get("/liquid", (req, res) => {
+  res.render("liquid");
+});
+app.get("/ultraShortDuration", (req, res) => {
+  res.render("ultraShortDuration");
+});
+app.get("/lowDuration", (req, res) => {
+  res.render("lowDuration");
+});
+app.get("/moneyMarket", (req, res) => {
+  res.render("moneyMarket");
+});
+app.get("/IndexDebt", (req, res) => {
+  res.render("IndexDebt");
+});
+app.get("/bankingandPSU", (req, res) => {
+  res.render("bankingandPSU");
+});
+app.get("/corporateBond", (req, res) => {
+  res.render("corporateBond");
+});
+app.get("/shortDuration", (req, res) => {
+  res.render("shortDuration");
+});
+app.get("/creditRisk", (req, res) => {
+  res.render("creditRisk");
+});
+
+app.get("/Gilt", (req, res) => {
+  res.render("Gilt");
+});
+app.get("/giltwithTen", (req, res) => {
+  res.render("giltwithTen");
+});
+app.get("/Floater", (req, res) => {
+  res.render("Floater");
+});
+app.get("/debtFoF", (req, res) => {
+  res.render("debtFoF");
+});
+app.get("/mediumDuration", (req, res) => {
+  res.render("mediumDuration");
+});
+app.get("/targetMaturity", (req, res) => {
+  res.render("targetMaturity");
+});
+
+app.get("/mediumtoLongDuration", (req, res) => {
+  res.render("mediumtoLongDuration");
+});
+app.get("/longDuration", (req, res) => {
+  res.render("longDuration");
+});
+app.get("/dynamicBond", (req, res) => {
+  res.render("dynamicBond");
+});
+
 //chating process
 app.post("/chat", async (req, res) => {
   try {
     const prompt = req.body.prompt;
-    console.log(prompt)
+    console.log(prompt);
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: `${prompt}`,
@@ -166,7 +232,6 @@ app.post("/chat", async (req, res) => {
     res.status(500).send({ error });
   }
 });
-
 
 app.post("/register", async (req, res) => {
   try {
